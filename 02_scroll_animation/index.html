@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../02_scroll_animation/tempstyle.css">
+<style>
+    @keyframes appear{
+        from{
+            opacity: 0;
+            /* scale: 0.5; */
+            /* transform: translateX(-100px); */
+            clip-path: inset(100% 100% 0 0);
+        }
+        to{
+            opacity: 1;
+            /* scale: 1; */
+            /* transform: translateX(0px); */
+            clip-path: inset(0 0 0 0);
+        }
+    }
+    .block{
+        animation: appear linear;
+        animation-timeline: view(); /*animation happned when the particular element is visible on the screen*/
+        /* animation-range: entry 0; animation happend when the element start to appear in the view port */
+        animation-range: entry 0 cover 40%; /*the animation will be full complete by the time it reaches the 40% of the view port*/
+    }
+</style>
+</head>
+<body>
+    <h1>Animation on scroll</h1>
+    <div class="view">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</body>
+</html>
