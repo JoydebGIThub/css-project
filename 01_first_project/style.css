@@ -1,0 +1,44 @@
+body{
+    min-height: 400px;
+    border: 8px solid black;
+    display: flex;
+    gap: 10px;
+    /* column-gap: 10px;
+    row-gap: 5px;
+    flex-wrap: wrap; */
+    /* flex-direction: row; default left to right */
+    /* flex-direction: row-reverse; right to left */
+    /* flex-direction: column; /*change the axis*/
+    /* justify-content: flex-start; */
+     justify-content: flex-end;/*right */
+    /* justify-content: center;center in the main axis */
+    /* justify-content: space-between;distribute the element left to right */
+    /* justify-content: space-around;distribute the element left to right don't tauched the edge */
+    /* justify-content: space-evenly;distribute the element left to right all the spaces are even */
+    align-items: flex-start;
+    /* align-content: center; */
+}
+#box-1{
+    /* flex-shrink: 0; */
+    /* flex-grow: 5; */
+    /* align-self: center; */
+    margin-right: auto;
+}
+.box{
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0071FF;
+    font-size: 20pt;
+}
+@media(max-width:576px){
+    body{
+        flex-wrap:wrap;
+    }
+}
