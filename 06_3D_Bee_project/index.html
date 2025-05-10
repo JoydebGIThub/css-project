@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation Website with flying bee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Codehal</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <model-viewer src="bee_flying.glb" id="bee-model" camera-orbit="90deg 90deg" autoplay></model-viewer>
+    <section class="home">
+        <h1>3D Animation</h1>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>About Bees</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse iste id eum provident in pariatur rerum obcaecati repellat, nisi, vitae libero facere voluptatum at vero eius culpa neque quo.</p>
+            <a href="#">View More</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-content">
+            <div class="outer">
+                <div class="inner">
+
+                </div>
+            </div>
+            <div class="outer">
+                <div class="inner">
+                    
+                </div>
+            </div>
+            <div class="outer">
+                <div class="inner">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <form class="contact-form">
+            <h2>Content</h2>
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
